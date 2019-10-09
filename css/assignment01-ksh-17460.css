@@ -1,0 +1,123 @@
+* {
+    padding: 0 10px;
+    margin: 10px auto;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+   
+}
+
+@keyframes example{
+    from {left: -20px;}
+    to {left: 20px;}
+}
+
+ol{
+    
+    font-size: 1.8em;
+    padding: 70px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    float: left;
+    box-shadow: 0px 3px 7px #aaa;
+}
+
+.navbar > span {
+    padding: 12px 0px;
+    min-height: 16px;
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.header {
+    float: left;
+    width: 100%;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}
+
+.body {
+    float: left;
+    width: 100%;
+}
+
+.para {
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.myphoto {
+    float: left;
+    width: 100%;
+}
+
+img {
+    max-height: 450px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+.links {
+    width: 100%;
+    float: left;
+}
+
+.btn, .btn2 {
+    width: 100%;
+    min-height: 32px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar > span {
+        width: calc(100% / 6);
+    }
+    
+    #myphoto, .links {
+        width: 50%;
+        float: left;
+    }
+    .btn, .btn2 {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .btn {
+        float: left;
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 42%;
+    }
+    .btn2 {
+        float: left;
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+    }
+}

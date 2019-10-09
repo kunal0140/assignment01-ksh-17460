@@ -1,0 +1,100 @@
+* {
+    margin: 10px auto;
+}
+
+div {
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Indie';
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+.container {
+    max-width: 1080px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    float: left;
+    box-shadow: 0px 3px 7px #aaa;
+}
+
+.navbar > span {
+    padding: 12px 0px;
+    min-height: 16px;
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.leftCol, .rightCol {
+    width: 100%;
+}
+
+.heading {
+    font-family: 'Indie';
+    font-size: 56px;
+}
+
+.form-group {
+    margin: 5px 0 15px;
+}
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group > input {
+    width: 100%;
+    border-radius: 4px;
+    height: 24px;
+    padding: 0 5px;
+}
+
+.form-group > textarea {
+    width: 100%;
+    border-radius: 4px;
+    min-height: 70px;
+    max-height: 150px;
+    padding: 0 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 45%;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+/* this css is for tablets */
+@media screen and (min-width: 600px) {
+    .navbar > span {
+        width: calc(100% / 6);
+    }
+    
+    .leftCol, .rightCol {
+        width: 50%;
+        float: left;
+    }
+}
